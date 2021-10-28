@@ -1,4 +1,4 @@
-Home Page
+Homepage
 =========================
 
-使用遗传算法构建一个会进化的字符串。
+The fantastic homepage for me!
