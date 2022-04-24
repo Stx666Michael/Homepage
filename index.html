@@ -203,6 +203,12 @@
       .midnight {
         color: #2c3e50;
       }
+
+      @media only screen and (max-width: 600px) {
+        .chevron {
+          bottom: 400px;
+        }
+      }
     </style>
   </head>
 
@@ -423,14 +429,14 @@
         var yDiff = yDown - yUp;
                                                                             
         if ( Math.abs( xDiff ) < Math.abs( yDiff ) ) {
-            if ( yDiff > 10 ) {
+            if ( yDiff > 5 ) {
                 /* down swipe */
                 if (currentSlideNumber !== totalSlideNumber - 1) {
                   currentSlideNumber++;
                   nextItem();
                 }
                 slideDurationTimeout(slideDurationSetting);
-            } else if ( yDiff < -10 ) { 
+            } else if ( yDiff < -5 ) { 
                 /* up swipe */
                 if (currentSlideNumber !== 0) {
                   currentSlideNumber--;
